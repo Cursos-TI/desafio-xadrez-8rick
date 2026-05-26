@@ -5,28 +5,61 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+     int bispo = 5;
+     int torre = 5;
+     int rainha = 8;
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    // =====================================
+    // BISPO
+    // =====================================    
+     printf("=== Movimento do bispo ===");
+     
+     //diagonal = cima direita
+     for (int i = 1; i <= bispo; i++) {
+        printf("Cima direita");
+     }
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    // =====================================
+    // TORRE
+    // =====================================
+    printf("\n=== Movimento da torre ===\n");
+    
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    //direita
+    for(int i = 1; i <= torre; i++) {
+        printf("Direita\n");
+    }
+     
+    // =====================================
+    // RAINHA
+    // =====================================
+    printf("Movimento da Rainha");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    //esquerda 
+    for(int i = 1; i <= rainha; i++) {
+        printf("Esquerda");
+    }
 
-    return 0;
+    // =====================================
+    // CAVALO
+    // =====================================
+
+    /*
+        Movimento em L:
+        2 casas para cima
+        1 casa para direita
+    */
+
+    for(int i = 1; i <= 2; i++) {
+        printf("Cima\n");
+    }
+
+    for(int i = 1; i <= 1; i++) {
+        printf("Direita\n");
+    }
+
+
+    return 0; 
 }
